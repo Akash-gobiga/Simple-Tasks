@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Smart Calculator</h1>
+        <p>Simple & Elegant Mathematical Tool</p>
+    </div>
+
+    <!-- Calculator Container -->
+    <div class="calculator">
+        <!-- Display Screen -->
+        <div class="display" id="display">0</div>
+
+        <!-- Button Grid -->
+        <div class="buttons">
+            <!-- First Row: Clear, Delete, Percentage, Division -->
+            <button class="clear" onclick="clearDisplay()">AC</button>
+            <button onclick="deleteLast()">⌫</button>
+            <button class="operator" onclick="appendToDisplay('%')">%</button>
+            <button class="operator" onclick="appendToDisplay('/')">÷</button>
+
+            <!-- Second Row: Numbers 7, 8, 9, Multiplication -->
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('*')">×</button>
+
+            <!-- Third Row: Numbers 4, 5, 6, Subtraction -->
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">−</button>
+
+            <!-- Fourth Row: Numbers 1, 2, 3, Addition -->
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+
+            <!-- Fifth Row: Zero (spans 2 columns), Decimal, Equals -->
+            <button class="zero" onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <!-- Link JavaScript File -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
