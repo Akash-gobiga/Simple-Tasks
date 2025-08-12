@@ -11,6 +11,7 @@ const display = document.getElementById('display');
  */
 function updateDisplay() {
     display.textContent = currentInput;
+     display.scrollLeft = display.scrollWidth; // Auto scroll to the right
 }
 
 /**
