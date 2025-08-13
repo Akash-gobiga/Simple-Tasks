@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+    width: 14.28%; /* Equal column width for 7 days */
+    height: 60px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f8f8f8;
+}
+
+td:hover {
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+td:empty {
+    background-color: #eee; /* Empty cells look different */
+}

@@ -4,48 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Simple TODO List (HTML only)</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!--
-    Pure HTML todo list (no CSS, no JavaScript).
-    To add or remove tasks, edit the <ul> below directly.
-    Checking a box only toggles its state for this session — there is no persistence.
-  -->
-
   <h1>Todo List</h1>
 
-  <!-- Quick-add form (will not persist or dynamically add items without JS/server) -->
   <form action="#" method="get" aria-label="Add a new todo (static)">
     <label for="new-task">Add new task:</label>
     <input id="new-task" name="new-task" type="text" placeholder="Type task and press Enter" />
     <input type="submit" value="Add" />
   </form>
 
-  <!-- Tasks: edit these <li> elements to change the list -->
   <ul role="list" aria-label="Tasks">
-    <li>
-      <label>
-        <input type="checkbox" /> Buy groceries
-      </label>
-    </li>
-    <li>
-      <label>
-        <input type="checkbox" checked /> Finish assignment
-      </label>
-    </li>
-    <li>
-      <label>
-        <input type="checkbox" /> Read chapters 4–6
-      </label>
-    </li>
-    <li>
-      <label>
-        <input type="checkbox" /> Call the bank
-      </label>
-    </li>
+    <li><label><input type="checkbox" /> Buy groceries</label></li>
+    <li><label><input type="checkbox" checked /> Finish assignment</label></li>
+    <li><label><input type="checkbox" /> Read chapters 4–6</label></li>
+    <li><label><input type="checkbox" /> Call the bank</label></li>
   </ul>
 
-  <!-- Example of grouping or sections -->
   <h2>Today</h2>
   <ul role="list" aria-label="Today's tasks">
     <li><label><input type="checkbox" /> Morning workout</label></li>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #89f7fe, #66a6ff);
+    padding: 20px;
+    max-width: 650px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+    text-align: left;
+    border-left: 6px solid #ff9f43;
+    padding-left: 8px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    border-color: #66a6ff;
+}
+
+input[type="submit"] {
+    padding: 10px 16px;
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ee5253;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    background: white;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background 0.3s;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background: #f7faff;
+}
+
+label {
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 12px;
+    accent-color: #66a6ff; 
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: gray;
+}
